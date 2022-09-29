@@ -13,7 +13,7 @@
  * License (the "BSD").
  * </p>
  */
-package com.github.ranlee1.jpinyin;
+package io.github.ranlee1.jpinyin;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

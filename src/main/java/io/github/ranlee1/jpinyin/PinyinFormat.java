@@ -1,4 +1,4 @@
-package com.github.ranlee1.jpinyin;
+package io.github.ranlee1.jpinyin;
 
 /**
  * 拼音格式类

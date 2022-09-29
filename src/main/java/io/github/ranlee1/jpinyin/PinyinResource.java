@@ -1,4 +1,4 @@
-package com.github.ranlee1.jpinyin;
+package io.github.ranlee1.jpinyin;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
