@@ -1,5 +1,6 @@
 package com.github.stuxuhai.jpinyin;
 
+import io.github.ranlee1.jpinyin.ChineseHelper;
 import org.junit.Assert;
 import org.junit.Test;
 

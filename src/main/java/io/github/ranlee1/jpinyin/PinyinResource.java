@@ -20,7 +20,7 @@ public final class PinyinResource {
     private PinyinResource() {
     }
 
-    protected static Reader newClassPathReader(String classpath) {
+    public static Reader newClassPathReader(String classpath) {
         InputStream is = PinyinResource.class.getResourceAsStream(classpath);
         try {
             return new InputStreamReader(is, "UTF-8");
@@ -29,7 +29,7 @@ public final class PinyinResource {
         }
     }
 
-    protected static Reader newFileReader(String path) throws FileNotFoundException {
+    public static Reader newFileReader(String path) throws FileNotFoundException {
         try {
             return new InputStreamReader(new FileInputStream(path), "UTF-8");
         } catch (UnsupportedEncodingException e) {
@@ -37,7 +37,7 @@ public final class PinyinResource {
         }
     }
 
-    protected static Map<String, String> getResource(Reader reader) {
+    public static Map<String, String> getResource(Reader reader) {
         Map<String, String> map = new ConcurrentHashMap<String, String>();
         try {
             BufferedReader br = new BufferedReader(reader);
@@ -54,15 +54,15 @@ public final class PinyinResource {
         return map;
     }
 
-    protected static Map<String, String> getPinyinResource() {
+    public static Map<String, String> getPinyinResource() {
         return getResource(newClassPathReader("/data/pinyin.dict"));
     }
 
-    protected static Map<String, String> getMutilPinyinResource() {
+    public static Map<String, String> getMutilPinyinResource() {
         return getResource(newClassPathReader("/data/mutil_pinyin.dict"));
     }
 
-    protected static Map<String, String> getChineseResource() {
+    public static Map<String, String> getChineseResource() {
         return getResource(newClassPathReader("/data/chinese.dict"));
     }
 }

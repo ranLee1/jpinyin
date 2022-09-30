@@ -1,5 +1,9 @@
 package com.github.stuxuhai.jpinyin;
 
+import io.github.ranlee1.jpinyin.PinyinException;
+import io.github.ranlee1.jpinyin.PinyinFormat;
+import io.github.ranlee1.jpinyin.PinyinHelper;
+import io.github.ranlee1.jpinyin.PinyinResource;
 import org.junit.Assert;
 import org.junit.Test;
 
