@@ -24,6 +24,15 @@ JPinyin支持常见多音字的识别，其中包括词组、成语、地名等�
 
 6、支持添加用户自定义字典；<br>
 
+## Maven
+
+``` xml
+    <dependency>
+        <groupId>io.github.ranlee1</groupId>
+        <artifactId>jpinyin</artifactId>
+        <version>1.0.1</version>
+    </dependency>
+```
 ## Usage
 
 ``` java
