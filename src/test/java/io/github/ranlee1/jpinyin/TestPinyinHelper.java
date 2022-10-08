@@ -1,4 +1,4 @@
-package com.github.stuxuhai.jpinyin;
+package io.github.ranlee1.jpinyin;
 
 import io.github.ranlee1.jpinyin.PinyinException;
 import io.github.ranlee1.jpinyin.PinyinFormat;
